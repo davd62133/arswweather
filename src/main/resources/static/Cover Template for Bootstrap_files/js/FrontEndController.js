@@ -16,6 +16,7 @@ var clima = (function(){
 async function inicio(){
     await getClima(document.getElementById("ciudad").value);
     setInfo();
+    initialize(document.getElementById("ciudad").value);
 }
 
 function setInfo(){
